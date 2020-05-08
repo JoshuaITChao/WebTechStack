@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>19-常用指令-自定义指令参数</title>
+    <!--1.下载导入Vue.js-->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<!--
+1.自定义指令参数
+在使用官方指令的时候我们可以给指令传参
+例如：v-model="name";
+在我们自定义指令中我们也可以传递
+
+2.获取自定义指令传递的参数
+    在执行自定义指令对应的方法的时候，除了会传递el给我们外，还会传递一个对象给我们
+    这个对象中就保存了指令传递过来的参数
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app">
+    <p v-color="'blue'">我是段落</p>
+    <p v-color="curColor">我是段落</p>
+</div>
+<script>
+
+    /**
+     * directive方法接收两个参数
+     * 第一个参数：指令的名称
+     * 第二个参数：对象
+     * 注意点：在自定义指令的时候，指令名称不需要加v-
+     *        指令可以在不同的生命周期阶段执行
+     * bind：指令绑定到元素上的时候执行
+     * inserted：绑定指令的元素被添加到父元素上的时候执行
+     */
+    Vue.directive('color', {
+        // 这里的el就是被绑定制定的那个元素
+        bind: function (el, obj) {
+            // obj: {
+            //     def: {bind: ƒ}
+            //     expression: "'blue'"
+            //     modifiers: {}
+            //     name: "color"
+            //     rawName: "v-color"
+            //     value: "blue"
+            //     __proto__: Object
+            // }
+            console.log(obj);
+            el.style.color = obj.value;
+        }
+    });
+
+    // 这里是 MVVM 中的ViewModel
+    let vue = new Vue({
+        el: '#app',
+        // 这里是 MVVM 中的model
+        data: {
+            curColor: 'green'
+        },
+        // 专门用于存储监听事件的回调函数
+        methods: {
+        }
+    });
+</script>
+</body>
+</html>

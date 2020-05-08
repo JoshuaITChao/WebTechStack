@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="603cf3ac-7c41-40bf-9edb-860510637d3b" name="Default Changelist" comment="" />
+    <list default="true" id="603cf3ac-7c41-40bf-9edb-860510637d3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/03-Vue数据单向绑定/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/03-Vue数据单向绑定/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/04-Vue数据的双向绑定/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/04-Vue数据的双向绑定/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/05-常用指令v-once/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/05-常用指令v-once/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/06-常用指令v-cloak/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/06-常用指令v-cloak/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/07-常用指令v-text和v-html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/07-常用指令v-text和v-html/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/08-常用指令v-if/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/08-常用指令v-if/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/09-常用指令v-show/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/09-常用指令v-show/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/10-常用指令v-for/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/10-常用指令v-for/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/11-常用指令v-bind/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/11-常用指令v-bind/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/12-常用指令-绑定类名/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/12-常用指令-绑定类名/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/13-常用指令-绑定样式/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/13-常用指令-绑定样式/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/14-常用指令v-on/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/14-常用指令v-on/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/15-常用指令v-on修饰符/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/15-常用指令v-on修饰符/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/16-常用指令v-on注意点/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/16-常用指令v-on注意点/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/17-常用指令v-on按键修饰符/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/17-常用指令v-on按键修饰符/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/18-常用指令-自定义全局指令/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/18-常用指令-自定义全局指令/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/19-常用指令-自定义指令参数/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/19-常用指令-自定义指令参数/js/vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/01-Vue开篇.html" beforeDir="false" afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/01-Vue开篇/01-Vue开篇.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +55,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1ba0GpdwZrOdR9tMvy78PkjIskD" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -28,7 +67,20 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战" />
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/01-Vue开篇" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战" />
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/14-常用指令v-on" />
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/13-常用指令-绑定样式" />
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/12-常用指令-绑定类名" />
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/11-常用指令v-bind" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -52,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588854803363</updated>
-      <workItem from="1588854805611" duration="1846000" />
+      <workItem from="1588854805611" duration="24052000" />
     </task>
     <servers />
   </component>

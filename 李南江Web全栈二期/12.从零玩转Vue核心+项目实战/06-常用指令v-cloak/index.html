@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-常用指令v-cloak</title>
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+    </style>
+    <!--1.下载导入Vue.js-->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<!--
+1.Vue 数据绑定过程
+    1.1 会先将未绑定数据的界面展示给用户
+    1.2 然后在根据模型中的数据和控制的区域生成绑定数据之后的HTML代码
+    1.3 最后再将绑定数据之后的 HTML 渲染到界面上
+
+正是在最终的 HTML 被生成渲染之前会先显示模版内容
+所以如果用户网络比较慢或者网页性能比较差，那么用户会看到模版内容
+
+2.如何解决这个问题
+利用 v-cloak 配合 [v-cloak]: { display: none; } 默认先隐藏为渲染的页面
+等到生成 HTML 渲染之后在重新显示
+
+3.v-cloak 指令作用：
+数据渲染之后自动显示元素
+-->
+<div id="app">
+    <p v-cloak>{{ name }}</p>
+</div>
+<script>
+    // 这里是 MVVM 中的ViewModel
+    let vue = new Vue({
+        el: '#app',
+        // 这里是 MVVM 中的model
+        data: {
+            name: 'JoshuaITSuper',
+        }
+    });
+</script>
+</body>
+</html>

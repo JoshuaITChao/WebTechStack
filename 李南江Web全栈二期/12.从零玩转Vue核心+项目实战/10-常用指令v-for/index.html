@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10-常用指令v-for</title>
+    <!--1.下载导入Vue.js-->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<!--
+1.什么是v-for指令？
+相当于 JS 中的 for in 循环，可以根据数据多次渲染元素
+
+2.v-for 的特点？
+可以遍历 数组、字符、数字、对象
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app">
+    <ul>
+<!--        <li v-for="(value, index) in list">{{ index }} - {{ value }}</li>-->
+<!--        <li v-for="(value, index) in 'abcdefg'">{{ index }} - {{ value }}</li>-->
+<!--        <li v-for="(value, index) in '1234'">{{ index }} - {{ value }}</li>-->
+        <li v-for="(value, key) in obj">{{ key }} - {{ value }}</li>
+    </ul>
+</div>
+<script>
+    // 这里是 MVVM 中的ViewModel
+    let vue = new Vue({
+        el: '#app',
+        // 这里是 MVVM 中的model
+        data: {
+            list: ["张三", "李四", "王五", "刘六"],
+            obj: {
+                name: "Joshua",
+                age: 29,
+                gender: "man",
+                class: "知播渔"
+            }
+        }
+    });
+</script>
+</body>
+</html>

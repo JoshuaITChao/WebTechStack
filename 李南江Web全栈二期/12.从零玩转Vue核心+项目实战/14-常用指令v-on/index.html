@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14-常用指令v-on</title>
+    <!--1.下载导入Vue.js-->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<!--
+1.什么是 v-on 指令？
+v-on 指令是专门用于给元素绑定监听事件的
+
+2.v-on 指令格式
+v-on:事件名称="回调函数名称"
+@事件名称="回调函数名称"
+
+3.v-on 注意点：
+v-on绑定的事件被触发后，会去 Vue 实例对象的 methods 中查找对应的回调函数
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app">
+    <!--1.通常的事件监听方法-->
+    <button onclick="alert('Joshua')">我是普通按钮</button>
+    <br/>
+
+    <!--
+    2.Vue 监听事件的绑定的注意点：
+        2.1 如果是通过 v-on 来绑定监听事件，那么指定事件名称的时候不用写on
+        2.2 如果是通过 v-on 来绑定监听事件，那么在赋值的时候必须赋值一个回调函数的名称
+    -->
+    <button v-on:click="myFn">我是Vue按钮</button>
+    <br/>
+    <button @click="myFn">我是Vue按钮</button>
+</div>
+<script>
+    // 这里是 MVVM 中的ViewModel
+    let vue = new Vue({
+        el: '#app',
+        // 这里是 MVVM 中的model
+        data: {
+        },
+        methods: {
+            myFn() {
+                alert('JoshuaITSuper');
+            }
+        }
+    });
+</script>
+</body>
+</html>

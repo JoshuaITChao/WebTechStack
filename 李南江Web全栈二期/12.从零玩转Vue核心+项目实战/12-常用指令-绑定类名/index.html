@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12-常用指令-绑定类名</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .size{
+            font-size: 100px;
+        }
+        .color{
+            color: red;
+        }
+        .active{
+            background-color: skyblue;
+        }
+    </style>
+    <!--1.下载导入Vue.js-->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<!--
+1.v-bind 指令的作用？
+v-bind 指令给'任意标签'的'任意属性'绑定数据
+对于大部分的属性而言我们只需要直接赋值即可，例如 :value="name"
+但是对于 class 和 style 属性而言，它的格式比较特殊
+
+2.通过 v-bind 绑定类名格式
+:class="['需要绑定的类名', ...]"
+
+3.注意点：
+    3.1 直接赋值一个类名（没有放到数组中）默认会去 Model 中查找，例如 :class=' 需要绑定的类名'
+    3.2 数组中的类名没用用引号括起来，也会去 Model 中查找，例如 :class="[需要绑定的类名]"
+    3.3 数组中的每个元素都可以是一个三目运算符，按需导入，例如 :class="[flag ? 'active': '']"
+    3.4 可以使用对象来代替数组中的三目运算符按需导入，例如 :class="[{'active': false}, {'size': true}]"
+    3.5 如果绑定的类名太多，可以将类名封装到 Model 中
+    data: {
+        obj: {
+            'size': true,
+            'color': false,
+            'active': false
+        }
+    }
+
+4.绑定类名企业开发应用场景
+从服务器动态获取样式后通过 v-bind 动态绑定类名
+这样可以让服务器来控制前端样式
+常见场景： 618 双11等
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app">
+    <!--1、一般情况下-->
+    <!--<p class="size color active">我是段落</p>-->
+
+    <!--
+    2、注意点：
+        如果通过 v-bind 给 class 绑定类名，那么不能直接赋值
+        默认情况下v-bind 会去 Model 中查找数据，但是 Model 中没有对应的类名，所以无效，所以不能直接赋值
+    -->
+    <!--<p :class="size">我是段落</p>-->
+
+    <!--
+    3、注意点：
+        如果想让 v-bind 去 style 中查找类名，那么就必须把类名放到数组中
+        但是放到数组中之后默认还是会去 Model 中查找
+    -->
+    <!--<p :class="[size]">我是段落</p>-->
+
+    <!--
+    4、注意点：
+        将类名放到数组中之后，还需要利用引号将类名括起来才会去 style 中查找
+    -->
+    <!--<p :class="['size', 'color', 'active']">我是段落</p>-->
+
+    <!--
+    5、注意点：
+        如果是通过 v-bind 绑定类名，那么在绑定的时候可以编写一个三目运算符来实现按需绑定
+        格式：条件表达式 ？ '需要绑定的类名' : ''
+    -->
+    <!--<p :class="['size', 'color', flag ? 'active': '']">我是段落</p>-->
+
+    <!--
+    6、注意点：
+        如果通过 v-bind 绑定类名，那么在绑定的时候可以通过对像来决定是否需要绑定
+        格式：{ '需要绑定的类名':  是否绑定 }
+    -->
+    <!--<p :class="['size', 'color', { 'active': true }]">我是段落</p>-->
+
+    <!--
+    7、注意点：
+        如果是通过 v-bind 绑定类名，那么还可以使用 Model 中的对象来替换数据
+    -->
+    <p :class="obj">我是段落</p>
+
+</div>
+<script>
+    // 这里是 MVVM 中的ViewModel
+    let vue = new Vue({
+        el: '#app',
+        // 这里是 MVVM 中的model
+        data: {
+            flag: true,
+            obj: {
+                'size': false,
+                'color': true,
+                'active': true
+            }
+        }
+    });
+</script>
+</body>
+</html>
