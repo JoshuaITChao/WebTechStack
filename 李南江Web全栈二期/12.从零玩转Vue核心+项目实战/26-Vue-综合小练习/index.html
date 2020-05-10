@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>26-Vue综合小练习</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #app{
+            width: 800px;
+            margin: 50px auto;
+            background-color: skyblue;
+        }
+        table{
+            width: 100%;
+            background-color: #000;
+        }
+        table tr{
+            background-color: #fff;
+        }
+    </style>
+    
+    <!--1.下载导入Vue.js-->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<!--
+需求：利用过滤器对时间进行格式化
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app">
+    <form action="#" v-show="isShow">
+        <input type="text" placeholder="请输入序号" v-model="person.id">
+        <input type="text" placeholder="请输入姓名" v-model="person.name">
+        <input type="text" placeholder="请输入分数" v-model="person.score">
+        <input type="submit" value="新增" @click.prevent="add">
+        <input type="submit" value="查询" @click.prevent="query">
+    </form>
+    <table>
+        <tr>
+            <th>序号</th>
+            <th>姓名</th>
+            <th>分数</th>
+            <th>时间</th>
+            <th>操作</th>
+        </tr>
+        <tr v-for="(person, index) in persons">
+            <td><input type="text" v-model="person.id" :disabled="isDisabled"></td>
+            <td><input type="text" v-model="person.name" :disabled="isDisabled"></td>
+            <td><input type="text" v-model="person.score" :disabled="isDisabled"></td>
+            <td><input type="text" :value= "person.time | dateFormart" disabled></td>
+            <td>
+                <a href="#" @click.prevent="edit">编辑</a>
+                <a href="#" @click.prevent="del(index)">删除</a>
+                <a href="#" @click.prevent="moreOpt">更多操作</a>
+            </td>
+        </tr>
+    </table>
+</div>
+<script>
+
+    /*
+    * 注意点：
+    *   在使用过滤器的时候，可以在过滤器名称后面加上()
+    *   如果给过滤器的名称后面加上(),那么就可以给过滤器处理函数传递参数
+    */
+    Vue.filter('dateFormart', function (value, fmStr) {
+        let date = new Date();
+        let year = date.getFullYear() + '';
+        let month = date.getMonth() + 1 + '';
+        let day = date.getDate() + '';
+        let hours = date.getHours() + '';
+        let minute = date.getMinutes() + '';
+        let seconds = date.getSeconds() + '';
+        if(fmStr && fmStr === 'yyyy-MM-dd'){
+            return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+        }
+        return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")} ${hours.padStart(2, "0")}:${minute.padStart(2, "0")}:${seconds.padStart(2, "0")}`;
+    });
+
+    // 这里是 MVVM 中的ViewModel
+    let vue1 = new Vue({
+        el: '#app',
+        // 这里是 MVVM 中的model
+        data: {
+            persons: [
+                {
+                    id: 1,
+                    name: 'zs',
+                    score: 98,
+                    time: new Date()
+                },
+                {
+                    id: 2,
+                    name: 'ls',
+                    score: 94,
+                    time: new Date()
+                },
+                {
+                    id: 3,
+                    name: 'ww',
+                    score: 95,
+                    time: new Date()
+                }
+            ],
+            person: {
+              id: '',
+              name: '',
+              score: ''
+            },
+            isDisabled: true,
+            isShow: false
+        },
+        // 专门用于存储监听事件的回调函数
+        methods: {
+            // 编辑
+            edit() {
+                this.isDisabled = !this.isDisabled;
+            },
+            // 删除
+            del(index){
+                this.persons.splice(index, 1);
+            },
+            // 更多操作
+            moreOpt() {
+                this.isShow = !this.isShow;
+            },
+            // 新增
+            add() {
+                this.person.time = new Date();
+                this.persons.push(this.person);
+                this.person = {
+                    id: '',
+                    name: '',
+                    score: ''
+                }
+            },
+            // 查询
+            query() {
+                let newPersons = this.persons.filter((person) => {
+                    return person.socre == this.person.score;
+                });
+                this.persons = newPersons;
+            }
+        },
+        // 专门用于定义计算属性的
+        computed: {
+        }
+    });
+</script>
+</body>
+</html>

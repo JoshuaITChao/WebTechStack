@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20-常用指令-自定义局部指令</title>
+    <!--1.下载导入Vue.js-->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<!--
+1.自定义全局指令的特点
+在任何一个Vue实例的控制区域都可以使用
+
+2.自定义局部指令的特点
+只能在自定义的那个Vue实例中使用
+
+3.如何定义一个局部指令
+给创建的Vue实例对象添加
+directives: {
+    // key是指令名称
+    // value是对象
+    'color': {
+        bind: function(el, obj){
+            el.style.color = obj.value;
+        }
+    }
+}
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app1">
+    <p v-color="'blue'">我是段落1</p>
+</div>
+<div id="app2">
+    <p v-color="'red'">我是段落2</p>
+</div>
+<script>
+
+    /*
+    Vue.directive('color', {
+        // 这里的el就是被绑定制定的那个元素
+        bind: function (el, obj) {
+            el.style.color = obj.value;
+        }
+    });
+    */
+
+    // 这里是 MVVM 中的ViewModel
+    let vue1 = new Vue({
+        el: '#app1',
+        // 这里是 MVVM 中的model
+        data: {
+        },
+        // 专门用于存储监听事件的回调函数
+        methods: {
+        }
+    });
+
+    // 这里是 MVVM 中的ViewModel
+    let vue2 = new Vue({
+        el: '#app2',
+        // 这是 MVVM 中的model
+        data: {},
+        // 专门用于存储监听事件的回调函数
+        methods: {},
+        // 专门用于定义局部指令的
+        directives: {
+            'color': {
+                // 这里的 el 指的是要绑定指令的元素
+                bind: function (el, obj) {
+                    el.style.color = obj.value;
+                }
+            }
+        }
+    });
+</script>
+</body>
+</html>

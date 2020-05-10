@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>22-Vue-计算属性和函数</title>
+    <!--1.下载导入Vue.js-->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<!--
+1.计算属性和函数？
+通过计算属性我们可以拿到处理逻辑后的数据，但是通过函数也可以拿到处理逻辑后的数据
+
+2.计算属性和函数有什么区别？
+    2.1 函数不会将计算的结果缓存起来，每一次访问都会重新计算赋值
+    2.2 计算属性会将计算结果缓存起来，只要数据没有发生变化，就不会重新计算
+
+3.计算属性应用场景
+    比较适合计算不会频繁发生变化的数据
+
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app">
+    <!--通过调用函数的方式处理数据-->
+    <p>{{ msg1() }}</p>
+    <p>{{ msg1() }}</p>
+
+    <!--通过计算属性的方式处理数据-->
+    <p>{{ msg2 }}</p>
+    <p>{{ msg2 }}</p>
+    <p>{{ msg2 }}</p>
+</div>
+<script>
+
+    // 这里是 MVVM 中的ViewModel
+    let vue = new Vue({
+        el: '#app',
+        // 这里是 MVVM 中的model
+        data: {
+            name: 'JoshuaITSuper',
+            age: 29,
+            // 通过函数也可以定义属性，只不过在使用插值语法的时候要当作调用函数（方法）的方式调用
+            msg1: function () {
+                console.log('msg1()函数执行了');
+                return 'abcdefg'.split('').reverse().join('');
+            }
+        },
+        // 专门用于存储监听事件的回调函数
+        methods: {
+        },
+        // 专门用于定义计算属性的
+        computed: {
+            msg2: function () {
+                console.log('msg2()计算属性执行了');
+                return 'abcdefg'.split('').reverse().join('');
+            }
+        }
+    });
+</script>
+</body>
+</html>
