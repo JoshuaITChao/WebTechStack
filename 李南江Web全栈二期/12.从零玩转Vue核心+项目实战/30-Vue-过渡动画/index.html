@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>30-Vue-过渡动画</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+
+    <!--1.下载导入Vue.js-->
+    <script src="js/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+</head>
+<body>
+
+<!--
+1.配合Velocity实现过渡动画
+在 Vue 中我们除了可以自己实现过渡动画之外，还可以结合第三方框架实现过渡动画
+
+1.1 导入 Velocity 库
+1.2 在动画执行过程中通过钩子函数编写 Velocity 动画
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app">
+    <button @click="toggle">我是按钮</button>
+    <transition appear
+                v-bind:css="false"
+                v-on:before-enter="beforeEnter"
+                v-on:enter="enter"
+                v-on:after-enter="afterEnter"
+    >
+        <div class="box" v-show="isShow"></div>
+    </transition>
+</div>
+<script>
+    // 这里是 MVVM 中的ViewModel
+    let vue = new Vue({
+        el: '#app',
+        // 这里是 MVVM 中的model
+        data: {
+            isShow: true
+        },
+        // 专门用于存储监听事件的回调函数
+        methods: {
+            toggle(){
+                this.isShow = !this.isShow;
+            },
+            beforeEnter(el){
+
+            },
+            enter(el, done){
+                Velocity(el, { opacity: 1, marginLeft: "500px" }, 3000);
+            },
+            afterEnter(el){
+
+            }
+        },
+        // 专门用于定义计算属性的
+        computed: {
+        }
+    });
+</script>
+</body>
+</html>
