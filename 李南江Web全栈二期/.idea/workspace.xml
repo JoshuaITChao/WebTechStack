@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="603cf3ac-7c41-40bf-9edb-860510637d3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/30-Vue-过渡动画/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/30-Vue-过渡动画/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/31-Vue-过渡动画/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/31-Vue-过渡动画/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/32-Vue-过渡动画/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/32-Vue-过渡动画/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/33-Vue-v-for-key/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/33-Vue-v-for-key/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/34-Vue-过渡动画/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/34-Vue-过渡动画/js/vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,19 +40,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/33-Vue-v-for-key" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战" />
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/01-Vue开篇" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/33-Vue-v-for-key" />
       <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战" />
       <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/14-常用指令v-on" />
       <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/13-常用指令-绑定样式" />
       <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/12-常用指令-绑定类名" />
-      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/11-常用指令v-bind" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战" />
-      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/01-Vue开篇" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -73,7 +79,9 @@
       <updated>1588854803363</updated>
       <workItem from="1588854805611" duration="24263000" />
       <workItem from="1590027602608" duration="136000" />
-      <workItem from="1590755935960" duration="1188000" />
+      <workItem from="1590755935960" duration="1318000" />
+      <workItem from="1591067255972" duration="158000" />
+      <workItem from="1591876080388" duration="3930000" />
     </task>
     <servers />
   </component>

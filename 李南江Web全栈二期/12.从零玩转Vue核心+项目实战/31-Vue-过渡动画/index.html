@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>30-Vue-过渡动画</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .a{
+            opacity: 0;
+        }
+        .b{
+            opacity: 1;
+            margin-left: 500px;
+        }
+        .c{
+            transition: all 3s;
+        }
+    </style>
+
+    <!--1.下载导入Vue.js-->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<!--
+1.自定义类名动画
+在Vue中除了可以使用 默认类名(v-xxx)来指定过渡动画
+       除了可以使用 自定义类名前缀(yyy-xxx)来指定过渡动画（transition name='yyy'）
+       除了可以使用 JS钩子函数来指定过渡动画之外
+还可以使用自定义类名的方式来指定过渡动画
+
+enter-class                     // 进入动画开始之前
+enter-active-class              // 进入动画执行过程中
+enter-to-class                  // 进入动画执行完毕之后
+leave-class                     // 离开动画开始之前
+leave-active-class              // 离开动画执行过程中
+leave-to-class                  // 离开动画执行完毕之后
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app">
+    <button @click="toggle">我是按钮</button>
+    <transition appear
+                enter-class="a"
+                enter-active-class="c"
+                enter-to-class="b"
+    >
+        <div class="box" v-show="isShow"></div>
+    </transition>
+</div>
+<script>
+    // 这里是 MVVM 中的ViewModel
+    let vue = new Vue({
+        el: '#app',
+        // 这里是 MVVM 中的model
+        data: {
+            isShow: true
+        },
+        // 专门用于存储监听事件的回调函数
+        methods: {
+            toggle(){
+                this.isShow = !this.isShow;
+            }
+        },
+        // 专门用于定义计算属性的
+        computed: {
+        }
+    });
+</script>
+</body>
+</html>

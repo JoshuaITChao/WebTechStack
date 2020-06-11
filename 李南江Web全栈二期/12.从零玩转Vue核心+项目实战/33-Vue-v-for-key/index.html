@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>33-Vue-v-for-key</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+
+    <!--1.下载导入Vue.js-->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<!--
+1.v-for注意点
+    1.1 v-for为了提升性能，在更新以渲染过的元素列表时，采用了"就地复用"的策略。也正是因为这个策略，在某些时候会导致我们的数据错乱
+    例如：在列表前面新增了内容
+    1.2 为了解决这个问题，我们可以在渲染列表的时候给每个元素加上独一无二的key
+    v-for在更新已经渲染过的元素列表时，会先判断key是否相同，如果相同就复用，如果不同就重新创建
+2.key属性注意点
+    不能使用index作为key,因为在列表的内容新增和删除时index都会发生变化
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app">
+    <form>
+        <input type="text" v-model="name">
+        <input type="submit" value="添加" @click.prevent="add">
+    </form>
+    <ul>
+        <li v-for="(person,index) in persons" :key="person.id">
+            <input type="checkbox">
+            <span>{{index}} - {{person.name}}</span>
+        </li>
+    </ul>
+</div>
+<script>
+    // 这里是 MVVM 中的ViewModel
+    let vue = new Vue({
+        el: '#app',
+        // 这里是 MVVM 中的model
+        data: {
+            persons: [
+                {name: "zs", id:1},
+                {name: "ls", id:2},
+                {name: "ww", id:3}
+            ],
+            name: ""
+        },
+        // 专门用于存储监听事件的回调函数
+        methods: {
+            add(){
+                let lastPerson = this.persons[this.persons.length - 1];
+                let newPerson = {name: this.name, id: lastPerson.id + 1}
+                // this.persons.push(newPerson);
+                this.persons.unshift(newPerson);
+                this.name = "";
+            }
+        },
+        // 专门用于定义计算属性的
+        computed: {
+        }
+    });
+</script>
+</body>
+</html>
