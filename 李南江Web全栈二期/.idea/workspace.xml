@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="603cf3ac-7c41-40bf-9edb-860510637d3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/31-Vue-过渡动画/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/31-Vue-过渡动画/js/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/32-Vue-过渡动画/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/32-Vue-过渡动画/js/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/33-Vue-v-for-key/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/33-Vue-v-for-key/js/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/34-Vue-过渡动画/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/34-Vue-过渡动画/js/vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +32,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/33-Vue-v-for-key" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -82,6 +74,7 @@
       <workItem from="1590755935960" duration="1318000" />
       <workItem from="1591067255972" duration="158000" />
       <workItem from="1591876080388" duration="3930000" />
+      <workItem from="1592061486526" duration="1636000" />
     </task>
     <servers />
   </component>
