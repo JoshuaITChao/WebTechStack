@@ -42,38 +42,26 @@
 <!--
 1.什么是命名视图？
 命名视图和前面讲解的具名插槽很像，都是让不同的出口显示不同的内容
+命名视图就是当路由地址被匹配的时候同时指定多个出口，并且每个出口的显示内容不同
 -->
 
 <!--这里就是 MVVM 中的 View-->
 <div id="app">
-
-    <!--
-    第一种传递参数的方式：通过URL参数的方式传递
-    在指定HASH的时候，通过?key=value&key=value的方式传递
-    在传递的组件的生命周期方法中通过 this.$route.query 的方式来获取
-    -->
-    <router-link to="/one?name=ljn&age=29" tag="button">切换第一个界面</router-link>
-
-    <!--
-    第二种传递参数的方式：通过路由规则中的占位符传递
-    在指定路由规则的时候通过/:key/:key的方式来指定占位符号
-    在指定HASH的时候，通过/value/value的方式来传递值
-    在传递的组件的生命周期中通过 this.$route.params 的方式来获取
-    -->
-    <router-link to="/two/zs/66" tag="button">切换第二个页面</router-link>
     <!--路由出口-->
     <!--路由匹配的组件将渲染到这里-->
-    <router-view></router-view>
+    <!--和匿名插槽一样，如果指定了多个router-view,那么当路由地址被匹配后，多个router-view中显示当内容是一样当-->
+   <!--
+    <router-link to="/one">我是界面1</router-link>
+    <router-link to="/two">我是界面2</router-link>
+    -->
+
+    <router-view name="name1"></router-view>
+    <router-view name="name2"></router-view>
 </div>
 
 <template id="one">
     <div class="onepage">
         <p>我是第一个界面</p>
-        <router-link to="/one/onesub1" tag="button">切换到第一个子页面</router-link>
-        <router-link to="/one/onesub2" tag="button">切换到第二个子页面</router-link>
-        <!--路由出口-->
-        <!--路由匹配到组件将渲染到这里-->
-        <router-view></router-view>
     </div>
 </template>
 
@@ -83,69 +71,28 @@
     </div>
 </template>
 
-<template id="onesub1">
-    <div class="onesub1page">
-        <p>我是第一个界面-界面1</p>
-    </div>
-</template>
-
-<template id="onesub2">
-    <div class="onesub2page">
-        <p>我是第一个界面-界面2</p>
-    </div>
-</template>
-
-
 <script>
 
     // 1.自定义组件
-    const onesub1 = {
-        template: "#onesub1"
-    };
-    const onesub2 = {
-        template: "#onesub2"
-    };
     const one = {
         template: "#one",
-        components:{
-            onesub1: "#onesub1",
-            onesub2: "#onesub2"
-        },
-        created: function () {
-            console.log(this.$route);
-            console.log(this.$route.query.name);
-            console.log(this.$route.query.age);
-        }
     };
     const two = {
         template: "#two",
-        created: function () {
-            console.log(this.$route);
-            console.log(this.$route.params.name);
-            console.log(this.$route.params.age);
-        }
     }
 
     // 2.定义切换的规则（定义路由规则）
     const routes = [
         // 数组中的每一个对象就是一条规则
         {
-            path: '/one',
-            component: one,
-            children: [
-                {
-                    // 注意点：如果嵌套路由（子路由），那么不写一级路径到地址，并且也不用写 /
-                    path: 'onesub1',
-                    component: onesub1
-                },
-                {
-                    // 注意点：如果嵌套路由（子路由），那么不写一级路径到地址，并且也不用写 /
-                    path: 'onesub2',
-                    component: onesub2
-                }
-            ]
+            path: '/',
+            components: {
+                name1: one,
+                name2: two
+            }
         },
-        { path: '/two/:name/:age', component: two }
+        { path: '/one', component: one },
+        { path: '/two', component: two }
     ];
 
     // 3.根据自定义的切换规则创建路由
