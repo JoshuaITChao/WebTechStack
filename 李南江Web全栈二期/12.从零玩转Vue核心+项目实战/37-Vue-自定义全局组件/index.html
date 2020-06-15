@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>37-Vue-自定义全局组件</title>
+    <!--1.下载导入Vue.js-->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<!--
+1.创建组件的其他方式
+    1.1 在注册组件的时候，除了传入一个组件构造器以外，还可以直接传入一个对象
+    1.2 在编写组件模版的时候，除了可以在字符串模版中编写以外，还可以像 art-template 一样在 script 中编写
+    1.3 在编写组件模版的时候，除了可以在 script 中编写之外，Vue 还专门提供了一个编写模版的标签 template
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app">
+    <!--创建组件方式1-->
+    <!--<abc></abc>-->
+    <!--<def></def>-->
+    <egf></egf>
+
+    <!--创建组件方式2-->
+    <bcd></bcd>
+
+    <!--通过 template 标签方式创建组件-->
+    <dtf></dtf>
+
+</div>
+
+<!--1.2 类似在 art-template 一样在script中编写-->
+<script id="info" type="text/html">
+    <div>
+        <img src="images/fm.jpg" alt="">
+        <p>我是描述信息</p>
+    </div>
+</script>
+
+<!--通过 template 标签创建组件-->
+<template id="info2">
+    <div>
+        <img src="images/fm.jpg" alt="">
+        <p>我是描述信息dtf</p>
+    </div>
+</template>
+
+
+<script>
+
+    // 创建组件方式一：
+    // 3.1 创建组件构建器
+    let Profile = Vue.extend({
+        // 注意点：在创建组件指定组件的模版的时候，模版只能有一个根元素
+        template: `
+            <div>
+                <img src="images/fm.jpg"/>
+                <p>我是描述信息abc</p>
+            </div>
+        `
+    });
+
+    let obj = {
+        // 注意点：在创建组件指定组件的模版的时候，模版只能有一个根元素
+        template: `
+            <div>
+                <img src="images/fm.jpg" alt="">
+                <p>我是描述信息def</p>
+            </div>
+        `
+    };
+
+    // 3.2 注册已经创建好的组件
+    // 第一个参数：指定注册的组件名称
+    // 第二个参数：传入已经创建好的组件构建器
+    // Vue.component("abc", Profile);
+    // Vue.component("def", obj);
+
+    // 创建组件的方式2
+    Vue.component("egf", {
+        // 注意点：在创建组件指定组件的模版的时候，模版只能有一个根元素
+        template: `
+            <div>
+                <img src="images/fm.jpg" alt="">
+                <p>我是描述信息egf</p>
+            </div>
+        `
+    });
+
+
+    // 创建组件方式2，通过script标签
+    Vue.component("bcd", {
+        template: "#info"
+    });
+
+    // 通过 template 标签创建组件
+    Vue.component("dtf", {
+        template: "#info2"
+    })
+
+    // 这里是 MVVM 中的ViewModel
+    let vue = new Vue({
+        el: '#app',
+        // 这里是 MVVM 中的model
+        data: {
+        },
+        // 专门用于存储监听事件的回调函数
+        methods: {
+        },
+        // 专门用于定义计算属性的
+        computed: {
+        }
+    });
+</script>
+</body>
+</html>
