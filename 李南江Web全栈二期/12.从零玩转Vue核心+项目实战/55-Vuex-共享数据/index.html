@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>55-Vuex-共享数据</title>
+    <!--1.下载导入Vue.js-->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<!--
+1.什么是 Vuex ?
+Vuex 是 Vue 配套的公共数据管理工具，他可以把一些共享的数据保存到Vuex中,方便整个程序中的任何组件直接获取和修改我们的公共数据
+
+注意点：
+    只有需要共享的才放到 Vuex 上，不需要共享的数据依然放到组件自身的 data 上
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app">
+    <father></father>
+</div>
+
+<template id="father">
+    <div>
+        <son1 @parentchange="change"></son1>
+        <son2 :parentnum="num"></son2>
+    </div>
+</template>
+
+<template id="son1">
+    <div>
+        <!--需求：在第一个组件中添加两个按钮和一个输入框，要求通过按钮控制输入框的数据 +1 和 -1 -->
+        <button @click="add">增加</button>
+        <button @click="sub">减少</button>
+        <input type="text" :value="count">
+    </div>
+</template>
+
+<template id="son2">
+    <div>
+        <!--需求：在第二个组件中展示第一个组件中的数据-->
+        <!--
+        注意点：
+            1.如果想要在子组件中使用父组件中的数据，那么必须通过父组件传递
+            2.如果想要在子组件中使用祖先组件中的数据，那么就必须一层一层传递
+            3.兄弟组件之间不能传递数据，如果兄弟组件之间想要传递数据，那么就必须借助父组件
+        -->
+
+        <!--
+        注意点：
+        虽然通过借助父组件能够实现兄弟组件之间的数据传递，但是这种方式非常的复杂，非常的不推荐
+        那么当前在企业开发中我们遇到了两个问题：
+        1.如果想要在子组件中使用祖先组件中的数据，那么就必须一层一层的传递（非常麻烦）
+        2.兄弟组件之间不能直接传递数据，如果兄弟组件之间想要传递数据，那么必须借助父组件（非常麻烦）
+
+        解决方案：
+            使用 Vuex
+        -->
+        <p>{{ parentnum }}</p>
+    </div>
+</template>
+
+<script>
+    // 父组件
+    Vue.component("father", {
+        template: "#father",
+        data: function(){
+          return {
+              num: 0
+          }
+        },
+        methods: {
+            change(newCount){
+                this.num = newCount;
+            }
+        },
+        // 子组件
+        components: {
+            "son1": {
+                template: "#son1",
+                data: function(){
+                    return {
+                        "count": 0
+                    }
+                },
+                methods: {
+                    /*
+                     * 如何实现儿子中的数据出和父组件中的数据同步
+                     * 1.父组件给子组件传递一个方法
+                     * 2.在子组件中修改数据
+                     * 3.儿子中修改完数据，调用父组件传递过来的方法，并将修改之后的数据传递给父组件方法
+                     * 4.在父组件保存最新的数据
+                     */
+                    add(){
+                        this.count = this.count + 1;
+                        this.$emit("parentchange", this.count)
+                    },
+                    sub(){
+                        this.count = this.count - 1;
+                        this.$emit("parentchange", this.count);
+                    }
+                }
+            },
+            "son2": {
+                template: "#son2",
+                props: ["parentnum"]
+            }
+        }
+    })
+
+    // 这里是 MVVM 中的 ViewModel
+    let vue = new Vue({
+        el: '#app',
+        // 这里是 MVVM 中的model
+        data: {
+        },
+        // 专门用于存储监听事件的回调函数
+        methods: {
+        },
+        // 专门用于定义计算属性的
+        computed: {
+        },
+        // 专门用于自定义局部组件的
+        components: {
+        }
+    });
+</script>
+</body>
+</html>

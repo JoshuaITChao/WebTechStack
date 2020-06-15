@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>62-VueRouter-嵌套路由</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .onepage, .twopage{
+            width: 500px;
+            height: 500px;
+        }
+        .onepage{
+            background-color: pink;
+        }
+        .twopage{
+            background-color: skyblue;
+        }
+        .onesub1page, .onesub2page{
+            width: 100%;
+            height: 300px;
+        }
+        .onesub1page{
+            background-color: orangered;
+        }
+        .onesub2page{
+            background: blueviolet;
+        }
+        /*router-link默认选中样式类名*/
+        .router-link-active{
+            background-color: red;
+        }
+
+        .jn-active{
+            background-color: skyblue;
+        }
+
+    </style>
+    <!--1.下载导入 Vue.js -->
+    <script src="js/vue.js"></script>
+    <!--2.导入 Vuex -->
+    <!--注意点：在导入 Vuex 之前必须要先导入 Vue -->
+    <script src="js/vuex.js"></script>
+    <!--3.导入Vue-Router-->
+    <!--注意点：必须先导入Vue之后再导入-->
+    <script src="js/vue-router.js"></script>
+</head>
+<body>
+
+<!--
+1.Vue-Router传递参数
+只要将 Vue-Router 挂载到 Vue 实例对象上，我们就可以通过 vue.$route 拿到路由对象
+只要能拿到路由对象，就可以通过路由对象拿到传递到参数
+
+方式一：通过URL?参数&参数(?key=value&key=value)，通过 this.$route.query 获取
+方式二：通过占位符传递(路由规则中/:key/:key,路径中/value/value)，通过 this.$route.params 获取
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app">
+
+    <!--
+    第一种传递参数的方式：通过URL参数的方式传递
+    在指定HASH的时候，通过?key=value&key=value的方式传递
+    在传递的组件的生命周期方法中通过 this.$route.query 的方式来获取
+    -->
+    <router-link to="/one?name=ljn&age=29" tag="button">切换第一个界面</router-link>
+
+    <!--
+    第二种传递参数的方式：通过路由规则中的占位符传递
+    在指定路由规则的时候通过/:key/:key的方式来指定占位符号
+    在指定HASH的时候，通过/value/value的方式来传递值
+    在传递的组件的生命周期中通过 this.$route.params 的方式来获取
+    -->
+    <router-link to="/two/zs/66" tag="button">切换第二个页面</router-link>
+    <!--路由出口-->
+    <!--路由匹配的组件将渲染到这里-->
+    <router-view></router-view>
+</div>
+
+<template id="one">
+    <div class="onepage">
+        <p>我是第一个界面</p>
+        <router-link to="/one/onesub1" tag="button">切换到第一个子页面</router-link>
+        <router-link to="/one/onesub2" tag="button">切换到第二个子页面</router-link>
+        <!--路由出口-->
+        <!--路由匹配到组件将渲染到这里-->
+        <router-view></router-view>
+    </div>
+</template>
+
+<template id="two">
+    <div class="twopage">
+        <p>我是第二个界面</p>
+    </div>
+</template>
+
+<template id="onesub1">
+    <div class="onesub1page">
+        <p>我是第一个界面-界面1</p>
+    </div>
+</template>
+
+<template id="onesub2">
+    <div class="onesub2page">
+        <p>我是第一个界面-界面2</p>
+    </div>
+</template>
+
+
+<script>
+
+    // 1.自定义组件
+    const onesub1 = {
+        template: "#onesub1"
+    };
+    const onesub2 = {
+        template: "#onesub2"
+    };
+    const one = {
+        template: "#one",
+        components:{
+            onesub1: "#onesub1",
+            onesub2: "#onesub2"
+        },
+        created: function () {
+            console.log(this.$route);
+            console.log(this.$route.query.name);
+            console.log(this.$route.query.age);
+        }
+    };
+    const two = {
+        template: "#two",
+        created: function () {
+            console.log(this.$route);
+            console.log(this.$route.params.name);
+            console.log(this.$route.params.age);
+        }
+    }
+
+    // 2.定义切换的规则（定义路由规则）
+    const routes = [
+        // 数组中的每一个对象就是一条规则
+        {
+            path: '/one',
+            component: one,
+            children: [
+                {
+                    // 注意点：如果嵌套路由（子路由），那么不写一级路径到地址，并且也不用写 /
+                    path: 'onesub1',
+                    component: onesub1
+                },
+                {
+                    // 注意点：如果嵌套路由（子路由），那么不写一级路径到地址，并且也不用写 /
+                    path: 'onesub2',
+                    component: onesub2
+                }
+            ]
+        },
+        { path: '/two/:name/:age', component: two }
+    ];
+
+    // 3.根据自定义的切换规则创建路由
+    const router = new VueRouter({
+        routes: routes,
+        // 指定导航激活样式类名
+        linkActiveClass: 'jn-active'
+    });
+
+    // 这里是 MVVM 中的 ViewModel
+    let vue = new Vue({
+        el: '#app',
+        // 4.将创建好的路由对象绑定到Vue实例上
+        router: router,
+        // 这里是 MVVM 中的model
+        data: {
+        },
+        // 专门用于存储监听事件的回调函数
+        methods: {
+        },
+        // 专门用于定义计算属性的
+        computed: {
+        },
+        // 专门用于自定义局部组件的
+        components: {
+            one: one,
+            two: two
+        }
+    });
+</script>
+</body>
+</html>

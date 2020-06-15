@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>59-VueRouter-基本使用</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .onepage, .twopage{
+            width: 500px;
+            height: 500px;
+        }
+        .onepage{
+            background-color: pink;
+        }
+        .twopage{
+            background-color: skyblue;
+        }
+    </style>
+    <!--1.下载导入 Vue.js -->
+    <script src="js/vue.js"></script>
+    <!--2.导入 Vuex -->
+    <!--注意点：在导入 Vuex 之前必须要先导入 Vue -->
+    <script src="js/vuex.js"></script>
+    <!--3.导入Vue-Router-->
+    <!--注意点：必须先导入Vue之后再导入-->
+    <script src="js/vue-router.js"></script>
+</head>
+<body>
+
+<!--
+1.什么是Vue-Router?
+Vue-Router 和 v-if、v-show一样，是用来切换组件的显示和隐藏的
+v-if/v-show 是使用标记来切换(true/false)
+Vue-Router 是哈希来切换的(#/xxx)
+比 v-if/v-show 强大的是 Vue-Router 不仅仅能够切换组件的显示，还能够在切换的时候传递参数
+
+2.Vue-Router使用
+    2.1 导入 Vue-Router
+    2.2 定义路由规则
+    2.3 根据路由规则创建路由对象
+    2.4 将路由对象挂载在 Vue 实例中
+    2.5 修改URL哈希值
+    2.6 通过<router-view>渲染匹配的组件
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app">
+    <a href="#/one">切换到第一个界面</a>
+    <a href="#/two">切换到第二个界面</a>
+    <!--路由出口-->
+    <!--路由匹配的组件将渲染到这里-->
+    <router-view></router-view>
+</div>
+
+<template id="one">
+    <div class="onepage">
+        <p>我是第一个界面</p>
+    </div>
+</template>
+
+<template id="two">
+    <div class="twopage">
+        <p>我是第二个界面</p>
+    </div>
+</template>
+
+
+<script>
+
+    // 1.自定义组件
+    const one = {
+        template: "#one"
+    };
+    const two = {
+        template: "#two"
+    }
+
+    // 2.定义切换的规则（定义路由规则）
+    const routes = [
+        // 数组中的每一个对象就是一条规则
+        { path: '/one', component: one },
+        { path: '/two', component: two }
+    ];
+
+    // 3.根据自定义的切换规则创建路由
+    const router = new VueRouter({
+        routes: routes
+    });
+
+    // 这里是 MVVM 中的 ViewModel
+    let vue = new Vue({
+        el: '#app',
+        // 4.将创建好的路由对象绑定到Vue实例上
+        router: router,
+        // 这里是 MVVM 中的model
+        data: {
+        },
+        // 专门用于存储监听事件的回调函数
+        methods: {
+        },
+        // 专门用于定义计算属性的
+        computed: {
+        },
+        // 专门用于自定义局部组件的
+        components: {
+            one: one,
+            two: two
+        }
+    });
+</script>
+</body>
+</html>

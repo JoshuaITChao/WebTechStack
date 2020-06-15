@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>58-Vuex-getters</title>
+    <!--1.下载导入 Vue.js -->
+    <script src="js/vue.js"></script>
+    <!--2.导入 Vuex -->
+    <!--注意点：在导入 Vuex 之前必须要先导入 Vue -->
+    <script src="js/vuex.js"></script>
+</head>
+<body>
+
+<!--
+1.什么是 Vuex 的 getters ?
+Vuex的getters属性和组件的计算属性一样，会将数据缓存起来，只有数据发生变化才会去重新计算
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app">
+    <father></father>
+</div>
+
+<template id="father">
+    <div>
+        <!--{{ formart }}-->
+        <!--{{ formart }}-->
+        <!--{{ formart }}-->
+        <!--{{ formart }}-->
+
+        {{ this.$store.getters.formart }}
+        {{ this.$store.getters.formart }}
+        {{ this.$store.getters.formart }}
+    </div>
+</template>
+
+<script>
+
+    // 2.创建 Vuex 对象
+    const store = new Vuex.Store({
+        // 这里的 state 就相当于组件中的 data, 就是专门用于保存数据的
+        state: {
+            msg: "知播渔"
+        },
+        // mutations: 用于保存修改共享数据的方法
+        mutations: {
+        },
+        getters: {
+            formart(state){
+                console.log("getters方法被执行了");
+                return state.msg + "www.it666.com";
+            }
+        }
+    });
+
+
+    // 父组件
+    Vue.component("father", {
+        template: "#father",
+        store: store,
+        data: function() {
+          return {
+              msg: "知播渔"
+          }
+        },
+        computed: {
+            formart() {
+                console.log("计算属性的方法被执行了");
+                return this.msg + "www.it666.com";
+            }
+        }
+    })
+
+    // 这里是 MVVM 中的 ViewModel
+    let vue = new Vue({
+        el: '#app',
+        // 这里是 MVVM 中的model
+        data: {
+        },
+        // 专门用于存储监听事件的回调函数
+        methods: {
+        },
+        // 专门用于定义计算属性的
+        computed: {
+        },
+        // 专门用于自定义局部组件的
+        components: {
+        }
+    });
+</script>
+</body>
+</html>

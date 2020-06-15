@@ -1,7 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="603cf3ac-7c41-40bf-9edb-860510637d3b" name="Default Changelist" comment="" />
+    <list default="true" id="603cf3ac-7c41-40bf-9edb-860510637d3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/38-Vue组件-自定义局部组件/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/38-Vue组件-自定义局部组件/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/38-Vue组件-自定义局部组件/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/39-Vue组件-组件中的data和methods/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/39-Vue组件-组件中的data和methods/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/39-Vue组件-组件中的data和methods/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/40-Vue组件-组件中的data为什么是一个函数/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/40-Vue组件-组件中的data为什么是一个函数/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/40-Vue组件-组件中的data为什么是一个函数/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/41-Vue组件-组件切换/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/41-Vue组件-组件切换/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/41-Vue组件-组件切换/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/42-Vue组件-动态组件/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/42-Vue组件-动态组件/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/42-Vue组件-动态组件/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/43-Vue组件-组件动画/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/43-Vue组件-组件动画/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/43-Vue组件-组件动画/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/44-Vue组件-父子组件/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/44-Vue组件-父子组件/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/44-Vue组件-父子组件/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/45-Vue组件-父子组件数据传递/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/45-Vue组件-父子组件数据传递/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/45-Vue组件-父子组件数据传递/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/46-Vue组件-父子组件方法传递/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/46-Vue组件-父子组件方法传递/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/46-Vue组件-父子组件方法传递/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/47-Vue组件-父子组件方法传递/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/47-Vue组件-父子组件方法传递/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/47-Vue组件-父子组件方法传递/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/48-Vue组件-组件命名注意点/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/48-Vue组件-组件命名注意点/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/48-Vue组件-组件命名注意点/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/49-Vue组件-组件多级传递/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/49-Vue组件-组件多级传递/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/49-Vue组件-组件多级传递/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/50-Vue组件-匿名插槽/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/50-Vue组件-匿名插槽/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/50-Vue组件-匿名插槽/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/51-Vue组件-具名插槽/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/51-Vue组件-具名插槽/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/51-Vue组件-具名插槽/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/52-Vue组件-v-slot指令/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/52-Vue组件-v-slot指令/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/52-Vue组件-v-slot指令/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/53-Vue组件-作用域插槽/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/53-Vue组件-作用域插槽/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/53-Vue组件-作用域插槽/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/54-Vue组件-v-slot指令/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/54-Vue组件-v-slot指令/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/54-Vue组件-v-slot指令/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/55-Vuex-共享数据/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/55-Vuex-共享数据/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/55-Vuex-共享数据/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/56-Vuex-共享数据/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/56-Vuex-共享数据/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/56-Vuex-共享数据/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/56-Vuex-共享数据/js/vuex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/57-Vuex-修改数据/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/57-Vuex-修改数据/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/57-Vuex-修改数据/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/57-Vuex-修改数据/js/vuex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/58-Vuex-getters/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/58-Vuex-getters/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/58-Vuex-getters/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/58-Vuex-getters/js/vuex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/59-VueRouter-基本使用/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/59-VueRouter-基本使用/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/59-VueRouter-基本使用/js/vue-router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/59-VueRouter-基本使用/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/59-VueRouter-基本使用/js/vuex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/60-VueRouter-基本使用/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/60-VueRouter-基本使用/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/60-VueRouter-基本使用/js/vue-router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/60-VueRouter-基本使用/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/60-VueRouter-基本使用/js/vuex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/61-VueRouter-传递参数/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/61-VueRouter-传递参数/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/61-VueRouter-传递参数/js/vue-router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/61-VueRouter-传递参数/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/61-VueRouter-传递参数/js/vuex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/62-VueRouter-嵌套路由/images/fm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/62-VueRouter-嵌套路由/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/62-VueRouter-嵌套路由/js/vue-router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/62-VueRouter-嵌套路由/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/62-VueRouter-嵌套路由/js/vuex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/36-Vue-自定义全局组件/images/fm.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/36-Vue组件-自定义全局组件/images/fm.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/36-Vue-自定义全局组件/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/36-Vue组件-自定义全局组件/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/36-Vue-自定义全局组件/js/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/36-Vue组件-自定义全局组件/js/vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/37-Vue-自定义全局组件/images/fm.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/37-Vue组件-自定义全局组件/images/fm.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/37-Vue-自定义全局组件/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/37-Vue组件-自定义全局组件/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/37-Vue-自定义全局组件/js/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/37-Vue组件-自定义全局组件/js/vue.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,19 +124,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/33-Vue-v-for-key" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战" />
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/59-VueRouter-基本使用/js" />
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/56-Vuex-共享数据/js" />
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/33-Vue-v-for-key" />
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/14-常用指令v-on" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战" />
       <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/01-Vue开篇" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/33-Vue-v-for-key" />
-      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战" />
-      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/14-常用指令v-on" />
-      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/13-常用指令-绑定样式" />
-      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/12-常用指令-绑定类名" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -72,10 +166,18 @@
       <workItem from="1590755935960" duration="1318000" />
       <workItem from="1591067255972" duration="158000" />
       <workItem from="1591876080388" duration="4287000" />
+      <workItem from="1592184792510" duration="24858000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="290" y="-915" width="670" height="676" key="search.everywhere.popup" timestamp="1592219988653">
+      <screen x="-284" y="-1177" width="1920" height="1177" />
+    </state>
+    <state x="290" y="-915" width="670" height="676" key="search.everywhere.popup/0.23.1440.812/-284.-1177.1920.1177@-284.-1177.1920.1177" timestamp="1592200150060" />
+    <state x="290" y="-915" width="670" height="676" key="search.everywhere.popup/0.23.1440.816/-284.-1177.1920.1177@-284.-1177.1920.1177" timestamp="1592219988653" />
   </component>
 </project>
