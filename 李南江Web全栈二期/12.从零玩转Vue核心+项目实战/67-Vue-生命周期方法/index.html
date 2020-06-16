@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>67-Vue-生命周期方法</title>
+    <!--1.下载导入 Vue.js -->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<!--
+1.什么是生命周期方法？
+和 webpack 生命周期一样，都是在从生到死的特定阶段调用的方法
+PS: 生命周期钩子 = 生命周期函数 = 生命周期事件
+
+2.Vue生命周期方法分类
+    2.1 创建期间的生命周期方法
+        beforeCreate:
+        created:
+        beforeMount:
+        mounted:
+    2.2 运行期间的生命周期方法
+        beforeUpdate:
+        updated:
+    2.3 销毁期间的生命周期方法
+        beforeDestory:
+        destoryed:
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app">
+    <button @click="change">切换</button>
+    <one v-if="isShow"></one>
+</div>
+
+<template id="one">
+    <div>
+        <p>我是组件</p>
+    </div>
+</template>
+
+<script>
+
+    // 创建组件
+    Vue.component("one", {
+        template: "#one",
+        data: function () {
+            return {
+                msg: "知播渔"
+            }
+        },
+        methods: {
+            say(){
+                console.log("say");
+            }
+        },
+        beforeDestroy: function () {
+            /**
+             * 在调用 beforeDestory 的时候，表示当前组件即将被销毁了
+             * 注意点：主要组件不被销毁，那么 beforeDestory 就不会调用
+             *        beforeDestory 函数是我们最后能够访问到组件数据和方法的函数
+             */
+            console.log("beforeDestory-------", this.msg);
+            console.log("beforeDestory-------", this.say);
+        },
+        destroyed: function () {
+            /**
+             * 在调用 destroyed 的时候，表示当前组件已经被销毁了
+             * 注意点：
+             *        只要组件不被销毁，那么 destroyed 就不会调用
+             *        不要再这个生命周期方法中再去操作组件中的数据和方法了
+             */
+            console.log("destoryed-------", this.msg);
+            console.log("destoryed-------", this.say);
+        }
+    });
+
+    // 这里是 MVVM 中的 ViewModel
+    let vue = new Vue({
+        el: '#app',
+        // 专门用于监听数据变化的
+        watch: {
+        },
+        // 这里是 MVVM 中的model
+        data: {
+            isShow: true
+        },
+        // 专门用于存储监听事件的回调函数
+        methods: {
+            change(){
+                this.isShow = !this.isShow;
+            }
+        },
+        // 专门用于定义计算属性的
+        computed: {
+        },
+        // 专门用于自定义局部组件的
+        components: {
+
+        }
+    });
+</script>
+</body>
+</html>

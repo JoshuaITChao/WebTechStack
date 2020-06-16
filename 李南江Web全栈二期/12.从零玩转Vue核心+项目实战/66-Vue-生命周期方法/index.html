@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>66-Vue-生命周期方法</title>
+    <!--1.下载导入 Vue.js -->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<!--
+1.什么是生命周期方法？
+和 webpack 生命周期一样，都是在从生到死的特定阶段调用的方法
+PS: 生命周期钩子 = 生命周期函数 = 生命周期事件
+
+2.Vue生命周期方法分类
+    2.1 创建期间的生命周期方法
+        beforeCreate:
+        created:
+        beforeMount:
+        mounted:
+    2.2 运行期间的生命周期方法
+        beforeUpdate:
+        updated:
+    2.3 销毁期间的生命周期方法
+        beforeDestory:
+        destoryed:
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app">
+    <p>{{ msg }}</p>
+</div>
+
+
+<script>
+
+    // 这里是 MVVM 中的 ViewModel
+    let vue = new Vue({
+        beforeUpdate: function(){
+            /**
+             * 在调用 beforeUpdate 的时候，表示 Vue 实例中保存的数据已经被修改
+             * 注意点：只有保存了的数据被修改了才会调用 beforeUpdate ，否则不会调用
+             * 注意点：在调用 beforeUpdate 的时候，数据已经更新了，但是界面还没有更新
+             */
+            console.log("beforeUpdate------"+this.msg);
+            console.log("beforeUpdate------"+document.querySelector('p').innerText);
+            console.log("beforeUpdate------"+document.querySelector('p').innerHTML);
+        },
+        updated: function()  {
+            /**
+             * 在调用 updated 的时候，表示Vue实例中保存的数据被修改了，并且界面也同步了修改了的数据
+             * 也就是说：数据和界面同步更之后会调用updated
+             */
+            console.log("updated------"+this.msg);
+            console.log("updated------"+document.querySelector('p').innerText);
+            console.log("updated------"+document.querySelector('p').innerHTML);
+        },
+        el: '#app',
+        // 专门用于监听数据变化的
+        watch: {
+        },
+        // 这里是 MVVM 中的model
+        data: {
+            msg: "知播渔"
+        },
+        // 专门用于存储监听事件的回调函数
+        methods: {
+            say(){
+                console.log("say");
+            }
+        },
+        // 专门用于定义计算属性的
+        computed: {
+        },
+        // 专门用于自定义局部组件的
+        components: {
+        }
+    });
+</script>
+</body>
+</html>

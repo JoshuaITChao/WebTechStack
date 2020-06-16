@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>69-Vue-render函数</title>
+    <!--1.下载导入 Vue.js -->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<!--
+1. Vue渲染组件的两种方式
+    1.1 先定义注册组件，然后在 Vue 实例中当作标签来使用
+    1.2 先定义注册组件，然后通过 Vue 实例的 render 方法来渲染
+
+2.两种渲染方法的区别
+    2.1 当作标签来渲染，不会覆盖 Vue 实例控制区域
+    2.2 通过render方法来渲染，会覆盖 Vue 实例控制区域
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<!--
+<div id="app">
+    &lt;!&ndash;通过标签的方式，不会覆盖 Vue 实例控制区域&ndash;&gt;
+    <one></one>
+</div>
+-->
+
+<div id="app">
+    <!--<one></one>-->
+</div>
+
+
+<template id="one">
+    <div>
+        <p>我是组件</p>
+    </div>
+</template>
+
+<script>
+
+    // 创建组件
+    Vue.component("one", {
+        template: "#one"
+    });
+
+    // 这里是 MVVM 中的 ViewModel
+    let vue = new Vue({
+        el: '#app',
+        render: function(createElement){
+            let html = createElement("one")
+            return html;
+        },
+        // 专门用于监听数据变化的
+        watch: {
+        },
+        // 这里是 MVVM 中的model
+        data: {
+        },
+        // 专门用于存储监听事件的回调函数
+        methods: {
+        },
+        // 专门用于定义计算属性的
+        computed: {
+        },
+        // 专门用于自定义局部组件的
+        components: {
+
+        }
+    });
+</script>
+</body>
+</html>

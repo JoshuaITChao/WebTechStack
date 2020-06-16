@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>68-Vue-特殊属性</title>
+    <!--1.下载导入 Vue.js -->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<!--
+1. Vue 特殊属性
+Vue 特点：数据驱动界面更新，无需操作 DOM 来更新页面
+也就是说 Vue 不推荐我们直接操作 DOM，但是在企业开发中有时候我们确实需要拿到 DOM 来操作 DOM
+那么如果不推荐使用原生的语法获取 DOM，我们应该如何获取 DOM ？
+在Vue中如果想要拿到 DOM 元素，我们可以通过 ref 来获取
+
+2. ref 使用
+    2.1 在需要获取的元素上添加 ref 属性，例如 <p ref="mypp">我是段落</p>
+    2.2 在使用的地方通过 this.$refs.xxx 获取，例如 this.$refs.mypp
+
+3. ref 特点
+ref 添加到元素 DOM 上，拿到的就是元素 DOM
+ref 添加到组件上，拿到到就是组件
+-->
+
+<!--这里就是 MVVM 中的 View-->
+<div id="app">
+    <button @click="myFn">我是按钮</button>
+    <p ref="myppp">我是原生DOM</p>
+    <one id="myOne" ref="myOne"></one>
+</div>
+
+<template id="one">
+    <div>
+        <p>我是组件</p>
+    </div>
+</template>
+
+<script>
+
+    // 创建组件
+    Vue.component("one", {
+        template: "#one",
+        data: function () {
+            return {
+                msg: "知播渔"
+            }
+        },
+        methods: {
+            say(){
+                console.log("say");
+            }
+        }
+    });
+
+    // 这里是 MVVM 中的 ViewModel
+    let vue = new Vue({
+        el: '#app',
+        // 专门用于监听数据变化的
+        watch: {
+        },
+        // 这里是 MVVM 中的model
+        data: {
+        },
+        // 专门用于存储监听事件的回调函数
+        methods: {
+            myFn(){
+                // 注意点：如果通过原生的语法来获取元素，无论是原生的元素还是自定义组件，拿到的都是原生的元素
+                // 注意点：并且 Vue 官方不推荐我们这样获取
+                // console.log(document.querySelector("p"));
+                // console.log(document.querySelector("#myOne"));
+
+                // 在 Vue 中如果想要获取原生的元素或者获取自定义组件，可以通过 ref 来获取
+                // 注意点：ref 如果是添加给元素，那么拿到的就是元素
+                //        ref 如果是添加给自定义组件，那么拿到的就是自定义组件
+                console.log("this.$refs------",this.$refs);
+                console.log("this.$refs.myppp------",this.$refs.myppp);
+                console.log("this.$refs.myOne------",this.$refs.myOne);
+                console.log("this.$refs.myOne.msg------",this.$refs.myOne.msg);
+                console.log("this.$refs.myOne.say------",this.$refs.myOne.say);
+            }
+        },
+        // 专门用于定义计算属性的
+        computed: {
+        },
+        // 专门用于自定义局部组件的
+        components: {
+
+        }
+    });
+</script>
+</body>
+</html>
