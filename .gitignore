@@ -1,2 +1,5 @@
 # Vue、React、ReactNative的node_modules忽略
 node_modules/
+
+# Mac OS X Finder and whatnot
+.DS_Store
