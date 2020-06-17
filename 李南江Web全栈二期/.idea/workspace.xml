@@ -2,54 +2,118 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="603cf3ac-7c41-40bf-9edb-860510637d3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/65-Vue-生命周期方法/images/fm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/65-Vue-生命周期方法/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/65-Vue-生命周期方法/js/vue-router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/65-Vue-生命周期方法/js/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/65-Vue-生命周期方法/js/vuex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/66-Vue-生命周期方法/images/fm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/66-Vue-生命周期方法/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/66-Vue-生命周期方法/js/vue-router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/66-Vue-生命周期方法/js/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/66-Vue-生命周期方法/js/vuex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/67-Vue-生命周期方法/images/fm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/67-Vue-生命周期方法/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/67-Vue-生命周期方法/js/vue-router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/67-Vue-生命周期方法/js/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/67-Vue-生命周期方法/js/vuex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/68-Vue-特殊属性/images/fm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/68-Vue-特殊属性/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/68-Vue-特殊属性/js/vue-router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/68-Vue-特殊属性/js/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/68-Vue-特殊属性/js/vuex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/69-Vue-render函数/images/fm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/69-Vue-render函数/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/69-Vue-render函数/js/vue-router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/69-Vue-render函数/js/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/69-Vue-render函数/js/vuex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/70-Vue-CLI3基本使用/images/fm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/70-Vue-CLI3基本使用/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/70-Vue-CLI3基本使用/js/vue-router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/70-Vue-CLI3基本使用/js/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/70-Vue-CLI3基本使用/js/vuex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/71-Vue-CLI使用/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/71-Vue-CLI使用/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/71-Vue-CLI使用/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/71-Vue-CLI使用/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/71-Vue-CLI使用/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/71-Vue-CLI使用/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/71-Vue-CLI使用/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/71-Vue-CLI使用/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/71-Vue-CLI使用/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/71-Vue-CLI使用/src/components/One.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/71-Vue-CLI使用/src/components/Two.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/71-Vue-CLI使用/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/71-Vue-CLI使用/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/71-Vue-CLI使用/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/src/views/About.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/src/views/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/72-Vue-CLI配置/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/src/views/About.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/src/views/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/73-Vue-ElementUI/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI/src/views/About.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI/src/views/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant/src/views/About.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant/src/views/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/src/components/Loading.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/src/plugin/loading/Loading.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/src/plugin/loading/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/.postcssrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/build/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/build/check-versions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/build/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/build/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/build/vue-loader.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/build/webpack.base.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/build/webpack.dev.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/build/webpack.prod.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/config/dev.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/config/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/config/prod.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/Vue-cli2.x/static/.gitkeep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/李南江Web全栈二期.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/李南江Web全栈二期.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/58-Vuex-getters/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/58-Vuex-getters/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,27 +147,28 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/71-Vue-CLI使用" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/71-Vue-CLI使用/node_modules/eslint" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/node_modules/eslint" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/71-Vue-CLI使用" />
-      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战" />
-      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/59-VueRouter-基本使用/js" />
-      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/56-Vuex-共享数据/js" />
-      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/33-Vue-v-for-key" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战" />
       <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/67-Vue-生命周期方法" />
       <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/01-Vue开篇" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/src/components" />
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin" />
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant" />
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI" />
+      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -134,6 +199,8 @@
       <workItem from="1591067255972" duration="158000" />
       <workItem from="1591876080388" duration="4287000" />
       <workItem from="1592184792510" duration="36222000" />
+      <workItem from="1592288396428" duration="404000" />
+      <workItem from="1592358152039" duration="12027000" />
     </task>
     <servers />
   </component>
@@ -141,18 +208,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="363" y="-890" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592285183826">
+    <state x="265" y="-944" key="#ESLint" timestamp="1592375741411">
+      <screen x="-284" y="-1177" width="1920" height="1177" />
+    </state>
+    <state x="265" y="-944" key="#ESLint/0.23.1440.821/-284.-1177.1920.1177@-284.-1177.1920.1177" timestamp="1592375741411" />
+    <state x="363" y="-890" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592376506518">
       <screen x="-284" y="-1177" width="1920" height="1177" />
     </state>
     <state x="363" y="-890" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.812/-284.-1177.1920.1177@-284.-1177.1920.1177" timestamp="1592285183826" />
-    <state x="134" y="-1005" key="SettingsEditor" timestamp="1592286742511">
+    <state x="363" y="-890" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.821/-284.-1177.1920.1177@-284.-1177.1920.1177" timestamp="1592376506518" />
+    <state x="134" y="-1005" key="SettingsEditor" timestamp="1592375686208">
       <screen x="-284" y="-1177" width="1920" height="1177" />
     </state>
     <state x="134" y="-1005" key="SettingsEditor/0.23.1440.812/-284.-1177.1920.1177@-284.-1177.1920.1177" timestamp="1592286742511" />
-    <state x="290" y="-915" width="670" height="676" key="search.everywhere.popup" timestamp="1592285764351">
+    <state x="134" y="-1005" key="SettingsEditor/0.23.1440.821/-284.-1177.1920.1177@-284.-1177.1920.1177" timestamp="1592375686208" />
+    <state x="290" y="-915" width="670" height="676" key="search.everywhere.popup" timestamp="1592377661178">
       <screen x="-284" y="-1177" width="1920" height="1177" />
     </state>
     <state x="290" y="-915" width="670" height="676" key="search.everywhere.popup/0.23.1440.812/-284.-1177.1920.1177@-284.-1177.1920.1177" timestamp="1592285764351" />
     <state x="290" y="-915" width="670" height="676" key="search.everywhere.popup/0.23.1440.816/-284.-1177.1920.1177@-284.-1177.1920.1177" timestamp="1592219988653" />
+    <state x="290" y="-915" width="670" height="676" key="search.everywhere.popup/0.23.1440.821/-284.-1177.1920.1177@-284.-1177.1920.1177" timestamp="1592377661178" />
   </component>
 </project>
