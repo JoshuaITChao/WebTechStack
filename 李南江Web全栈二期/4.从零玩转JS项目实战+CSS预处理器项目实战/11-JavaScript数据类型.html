@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11-JavaScript数据类型</title>
+    <script>
+        /**
+         * 1.基本数据类型
+         * Number   数值类型
+         * 在 JavaScript 当中无论是整数还是小数都是属于数值类型
+         *
+         * String   字符串类型
+         * 在 JavaScript 当中无论是单引号还是双引号括起来的内容都属于字符串类型
+         *
+         * Boolean  布尔类型
+         * 在 JavaScript 当中布尔类型比较特殊，只有两个取值 true / false
+         *
+         * Undefined未定义类型
+         * 在JavaScript当中未定义类型比较特殊，只有一个取值    undefined
+         *
+         * Null     空类型
+         *
+         *
+         * 2.引用数据类型
+         * Object 对象类型
+         *
+         *
+         * 3.在 JavaScript 中为了方便我们检测某一种数据是属于哪种数据类型，JavaScript 提供了一个名称叫做 typeof 的操作符
+         * 格式：typeof 要检测的数据
+         */
+
+        // 利用 typeof 检测123这个常量属于哪种数据类型，并将检测结果保存到 res 这个变量中
+        // let res = typeof 123;
+        // console.log(res);   // number
+
+        // let res = typeof 3.14;
+        // console.log(res);   // number
+
+        // let res = typeof 'abc';
+        // console.log(res);   // string
+
+        // let res = typeof "abc";
+        // console.log(res);   // string
+
+        // let res = typeof true;
+        // console.log(res);   // boolean
+
+        // let res = typeof false;
+        // console.log(res);   // boolean
+
+        let num;
+        // 以下代码的含义就是输入变量 num 中保存的数据
+        // 由于没有给 num 这个变量进行初始化，所以这个变量中保存的数据默认是 undefined
+        console.log(num);   // undefined
+        // 利用 typeof 检查 num 中保存的数据是什么类型
+        // 也就是利用 typeof 检测 undefined 是什么数据类型
+        let res = typeof num;
+        console.log(res);   // undefined
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

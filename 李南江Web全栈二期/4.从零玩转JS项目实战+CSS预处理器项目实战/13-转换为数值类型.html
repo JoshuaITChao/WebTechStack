@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>13-转换为数值类型</title>
+    <script>
+        /**
+         * 1.将 String 类型转换为数值类型
+         *  - 如果字符串中都是数值，那么就正常转换
+         *  - 如果字符串是一个空串 "" or ''，那么转换之后都是0
+         *  - 如果字符串中不仅仅是数字，那么转换之后是NaN
+         *
+         * 2.将 Boolean 类型转换为数值类型
+         *  - true 转换为数值类型为1
+         *  - false 转换为数值类型为0
+         *
+         * 3.将 Undefined 类型转换为数值类型
+         *  - 转换之后是 NaN
+         *
+         * 4.将 null 类型转换为数值类型
+         *  - 转换之后是0
+         *
+         *
+         *  总结：
+         *  空字符串、false、null 转换之后是0
+         *  字符串中包含非数值、undefined 转换之后为 NaN
+         *  其他正常转换
+         *
+         *
+         *  在JavaScript当中如果想将以上四种基本数据类型转换为数值类型，常用的方法有三种
+         *  1.通过 Number(常量or变量) 的方法来转换
+         *  2.还可以通过数学运算符中的 + 号和 - 号来转换
+         *  3.还可以通过 parseInt(需要转换的字符串) 、 parseFloat(需要转换的字符串)
+         *
+         */
+        /*
+        let str = "123";
+        console.log(str);                   // 123
+        console.log(typeof str);            // string
+        let num = Number(str);
+        console.log(num);                   // 123
+        console.log(typeof num);            // number
+        */
+
+        /*
+        let num = Number("456");
+        console.log(num);                   // 456
+        console.log(typeof num);            // number
+        */
+
+
+        // 注意点：如果字符串中没有数据，那么转换结果为0
+        /*
+        // let str = "";
+        // let str = '';
+        let str = "        ";
+        let num = Number(str);
+        console.log(num);                   // 0
+        console.log(typeof num);            // number
+        */
+
+
+        // 注意点：如果字符串中的数据不仅仅是数值，那么转换结果为 NaN
+        // Nan === Not a Number
+        /*
+        let str = "12px";
+        let num = Number(str);
+        console.log(num);                   // NaN
+        console.log(typeof num);            // number
+        */
+
+
+        // 注意点：布尔类型转换结果为 true 转换为 1,  false 转换为 0
+        /*
+        let flag = true;
+        let num = Number(flag);
+        console.log(num);                   // 1
+        console.log(typeof num);            // number
+        */
+
+
+
+        // 如果是空类型 null，那么转换结果为0
+        /*
+        let value = null;
+        let num = Number(value);
+        console.log(num);                   // 0
+        console.log(typeof num);            // number
+        */
+
+
+        // 如果是未定义类型 undefined,那么转换结果为 NaN
+        /*
+        let value = undefined;
+        let num = Number(value);
+        console.log(num);                   // NaN
+        console.log(typeof num);            // number
+        */
+
+
+
+        // 虽然通过+/-都可以将其它类型转换为数值类型, 但是-会改变数值的正负性
+        // +/-底层本质上就是调用了Number函数
+        /*
+        let str = "123";
+        // let num = +str;
+        // let num = -str;
+        // let num = +"456";
+        // let num = +"";
+        // let num = +"    ";
+        let num = +"12px";
+        console.log(num);
+        console.log(typeof num);
+        */
+
+        /*
+        // let flag = true;
+        let flag = false;
+        let num = +flag;
+        console.log(num);                   // 0
+        console.log(typeof num);            // number
+        */
+
+        /*
+        let value = undefined;
+        let num = + value;
+        console.log(num);                   // NaN
+        console.log(typeof num);            // number
+        */
+
+
+        // 注意点：parseInt / parseFloat 都会从左到右提取数值，一旦遇到非数值就会立即停止
+        //        如果停止的时候还没有提取到数值，那么就返回 NaN
+        /*
+        let str = "12px";
+        let num = + str;
+        console.log(num);                   // NaN
+        console.log(typeof num);            // number
+
+        let num2 = parseInt(str);
+        console.log(num2);                  // 12
+        console.log(typeof num2);           // number
+
+        let num3 = parseFloat(str);
+        console.log(num3);                  // 12
+        console.log(typeof num3);           // number
+
+        let str2 = "a3.14px";
+        let num4 = parseFloat(str2);
+        console.log(num4);                  // NaN
+        console.log(typeof num4);           // number
+        */
+
+
+        // 特别注意：parseInt / parseFloat 都会将传入的数据当作字符串处理
+        let flag = true;
+        let num = parseInt(flag);           // parseInt("true")
+        console.log(num);                   // NaN
+        console.log(typeof num);            // number
+    </script>
+</head>
+<body>
+
+</body>
+</html>
