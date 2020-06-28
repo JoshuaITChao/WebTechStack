@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="603cf3ac-7c41-40bf-9edb-860510637d3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/4.从零玩转JS项目实战+CSS预处理器项目实战/11-JavaScript数据类型.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.从零玩转JS项目实战+CSS预处理器项目实战/12-转换为字符串类型.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.从零玩转JS项目实战+CSS预处理器项目实战/13-转换为数值类型.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.从零玩转JS项目实战+CSS预处理器项目实战/14-转换为布尔类型.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03.从零玩转JavaScript语法精讲/51-JavaScript-变量作用域.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03.从零玩转JavaScript语法精讲/60-JavaScript-数组.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03.从零玩转JavaScript语法精讲/61-JavaScript-数组注意点.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03.从零玩转JavaScript语法精讲/62-JavaScript-数组的遍历.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03.从零玩转JavaScript语法精讲/63-JavaScript-数组的解构赋值.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03.从零玩转JavaScript语法精讲/64-JavaScript-数组的增删改查.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03.从零玩转JavaScript语法精讲/65-JavaScript-数组的常用方法.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.从零玩转JS项目实战+CSS预处理器项目实战/11-JavaScript数据类型.html" beforeDir="false" afterPath="$PROJECT_DIR$/03.从零玩转JavaScript语法精讲/11-JavaScript数据类型.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.从零玩转JS项目实战+CSS预处理器项目实战/12-转换为字符串类型.html" beforeDir="false" afterPath="$PROJECT_DIR$/03.从零玩转JavaScript语法精讲/12-转换为字符串类型.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.从零玩转JS项目实战+CSS预处理器项目实战/13-转换为数值类型.html" beforeDir="false" afterPath="$PROJECT_DIR$/03.从零玩转JavaScript语法精讲/13-转换为数值类型.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.从零玩转JS项目实战+CSS预处理器项目实战/14-转换为布尔类型.html" beforeDir="false" afterPath="$PROJECT_DIR$/03.从零玩转JavaScript语法精讲/14-转换为布尔类型.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/03.从零玩转JavaScript语法精讲" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,16 +59,17 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/3.从零玩转JavaScript语法精讲" />
       <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战" />
       <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/67-Vue-生命周期方法" />
       <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/01-Vue开篇" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/03.从零玩转JavaScript语法精讲" />
       <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin/src/components" />
       <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/76-Vue-Plugin" />
       <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/75-Vue-Vant" />
       <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战/74-Vue-MintUI" />
-      <recent name="$PROJECT_DIR$/12.从零玩转Vue核心+项目实战" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -99,6 +107,7 @@
       <workItem from="1592733252752" duration="8019000" />
       <workItem from="1592816330780" duration="26000" />
       <workItem from="1592826802794" duration="5000" />
+      <workItem from="1592966547458" duration="8129000" />
     </task>
     <servers />
   </component>

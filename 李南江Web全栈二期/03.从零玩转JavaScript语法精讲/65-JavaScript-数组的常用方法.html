@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>65-JavaScript-数组的常用方法</title>
+    <script>
+        let arr = [1, 2, 3, 4, 5];
+        /**
+         * 1.如何清空数组
+         */
+        // arr = [];
+        // arr.length = 0;
+        // arr.splice(0, arr.length);
+        // console.log(arr);
+
+        /**
+         * 2.如何将数组转换为字符串
+         */
+        // let str = arr.toString();
+        // console.log(str);                                   // 1,2,3,4,5
+        // console.log(typeof str);                            // string
+
+        /**
+         * 3.如何将数组转换成指定格式字符串
+         * join方法默认情况下如果没有传递参数, 就是调用toString();
+         * join方法如果传递了参数, 就会将传递的参数作为元素和元素的连接符号
+         */
+        // let str = arr.join('+');
+        // console.log(str);                                   // 1+2+3+4+5
+        // console.log(typeof str);                            // string
+
+        /**
+         * 4.如何将两个数组拼接为一个数组
+         * 注意点: 数组不能够使用加号进行拼接, 如果使用加号进行拼接会先转换成字符串再拼接
+         */
+        let arr1 = [1, 3, 5];
+        let arr2 = [2, 4, 6];
+        // let ret = arr1 + arr2;
+        // console.log(ret);                                   // 1,3,52,4,6
+
+        // let ret = arr1.concat(arr2);
+        // console.log(ret);                                   // [1, 3, 5, 2, 4, 6]
+        // console.log(arr1);                                  // [1, 3, 5]
+        // console.log(arr2);                                  // [2, 4, 6]
+
+        // 注意点: 扩展运算符在解构赋值中(等号的左边)表示将剩余的数据打包成一个新的数组
+        //         扩展运算符在等号右边, 那么表示将数组中所有的数据解开, 放到所在的位置
+        // 不会修改原有数组，会生成一个新的数组返回给我们
+        // let ret = [...arr1, ...arr2];
+        // console.log(ret);                                   // [1, 3, 5, 2, 4, 6]
+        // console.log(typeof ret);                            // object
+        // console.log(arr1);                                  // [1, 3, 5]
+        // console.log(arr2);                                  // [2, 4, 6]
+
+        /**
+         * 5.如何对数组中的内容进行反转
+         * 对原数组有影响
+         */
+        // let ret = arr.reverse();
+        // console.log(ret);                                   // [5, 4, 3, 2, 1]
+        // console.log(arr);                                   // [5, 4, 3, 2, 1]
+
+        /**
+         * 6.如何截取数组中指定范围内容
+         * slice方法是包头不包尾(包含起始位置, 不包含结束的位置)
+         */
+        // let ret = arr.slice(1, 3);
+        // console.log(ret);                                   // [2, 3]
+        // console.log(arr);                                   // [1, 2, 3, 4, 5]
+
+        /**
+         * 7.如何查找元素在数组中的位置
+         * indexOf方法如果找到了指定的元素, 就会返回元素对应的位置
+         * indexOf方法如果没有找到指定的元素, 就会返回-1
+         * 注意点: indexOf方法默认是从左至右的查找, 一旦找到就会立即停止查找
+         */
+        let arr4 = [1, 2, 3, 4, 5, 3];
+        // let ret = arr4.indexOf(3);
+        // console.log(ret);                                   // 2
+
+        // 注意点：lastIndexOf方法默认是从右至左的查找，一旦找到就会立即停止查找
+        // let ret = arr4.lastIndexOf(3);
+        // console.log(ret);                                   // 5
+
+
+        /**
+         * 8.如何判断数组中是否包含某个元素
+         */
+        // 我们可以通过indexOf和lastIndexOf的结果, 判断是否是-1即可
+        // let ret = arr.indexOf(8);
+        // let ret = arr.lastIndexOf(8);
+
+        // let ret = arr.includes(4);
+        // console.log(ret);                                   // true
+    </script>
+</head>
+<body>
+
+</body>
+</html>
